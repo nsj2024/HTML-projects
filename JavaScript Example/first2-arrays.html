@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript examples</title>
+
+    <script>
+        // var da =[3, 46, 57, 60, 97];
+        // console.log(da);
+        // da.push(100);
+        // console.log(da);
+
+        // da.shift();
+        // console.log(da)
+
+        // da.unshift(100, 200, 300);
+        // console.log(da);
+
+
+        // var total=0;
+
+
+        // function sumData()
+        // {
+        //         // for(var i in da)
+        //         // {
+        //         //     total+= da[i];
+
+        //         // }
+
+        //         // alert(total);
+        //         var cumSum=0;
+        //         da.forEach((item) =>{
+        //     cumSum += item;
+        // });
+
+        // alert(cumSum);
+        // }
+
+       
+
+        // sumData();
+
+        // function factorial(n) {
+        //     if (n === 0 || n === 1) return 1;
+        //     return n * factorial(n - 1);
+        // }
+
+        // console.log(factorial(5)); 
+
+        // function factorial(n){
+        //     var i =1;
+        //     var fact = 1;
+        //     while(i<=n){
+        //         fact *=1;
+        //         i++;
+        //     }
+
+        //     return fact;
+        // }
+
+        // var num= parseInt(prompt("Enter the number for factorial"))
+
+    //     const f = ["apples", "Joel", "Sam"];
+    // const filtereddata = f.filter((n) => {
+    // return n=="apples"});
+    // const nominees = f.map((f1) => {
+    //     return f1 + '#joined the contest';
+    // })
+    // console.log(nominees);
+ 
+    // const nums = [2,6,,8,16,32]
+    // const sum1 = nums.reduce((accumulator, curVal) => {
+    //     console.log(accumulator, curVal);
+    //     return accumulator+curVal;
+    // });
+ 
+
+
+    // const square = function(n){
+    //     return n*n;
+    // }
+    // let s=square;
+    // var result =s(5);
+    // console.log(result);
+
+//     const square = (n) => {
+//         return n*n;
+//     };
+//     let s=square(9);
+//    alert(s);
+
+
+
+    // const add = function(a,b){
+    //     return a+b;
+    // }
+    // let res = add(20,20);
+    // alert(res);z
+    
+//    const add =(a,b) =>{
+//        return a+b;
+//    }
+//    let res=add(89,84);
+//    alert(res);
+
+
+//objects in javascript
+
+// var movie ={name:"Titanic" , year: 1997}
+// console.log(movie.name);
+// console.log(movie.year);
+// movie.hero="Jack";
+// console.log(movie);
+
+
+
+        //Json objects
+        var jsonRef={
+            data :[
+           
+    {"company": "Google", "location": "San Francisco", "country": "USA", "employees": 156000},
+    {"company": "Infosys", "location": "Bengaluru", "country": "India", "employees": 343000},
+    {"company": "TCS", "location": "Powai Mumbai", "country": "India", "employees": 600000},
+    {"company": "UST", "location": "Trivandrum", "country": "India", "employees": 30000},
+    {"company": "NVIDIA", "location": "Santa Clara", "country": "USA", "employees": 25000},
+    {"company": "SAP", "location": "Walldorf", "country": "Germany", "employees": 105000},
+    {"company": "Siemens", "location": "Munich", "country": "Germany", "employees": 385000},
+    {"company": "Capgemini", "location": "Paris", "country": "France", "employees": 300000},
+    {"company": "Accenture", "location": "Dublin", "country": "Ireland", "employees": 674000},
+    {"company": "Spotify", "location": "Stockholm", "country": "Sweden", "employees": 9000}
+ 
+            ],
+        };
+
+        const totalEmployees = jsonRef.data.reduce((acc, company) => acc + company.employees, 0);
+ 
+ console.log(`Total number of employees: ${totalEmployees}`);
+ 
+
+        console.log(jsonRef);
+       // console.log(jsonRef.data[1].location);
+
+       const companyNames = jsonRef.data.map(item => item.company);
+        console.log("Company Names:", companyNames);
+         const totalCompanies = jsonRef.data.reduce((accumulator, item) => accumulator + 1, 0); 
+         console.log("Total Companies:", totalCompanies); console.log("Company Details:"); 
+        jsonRef.data.forEach(item => { console.log(`${item.company} located in ${item.location}, ${item.country}`); });
+
+        const countEmployeesByCountry = (jsonRef) => {
+                    return jsonRef.reduce((accumulator, company) => {
+                        if (accumulator[company.country]) {
+                            accumulator[company.country] += company.employees;
+                        } else {
+                            accumulator[company.country] = company.employees;
+                        }
+                        return accumulator;
+                    }, {});
+                };
+ 
+                const employeesByCountry = countEmployeesByCountry(jsonRef.data);
+ 
+                console.log(employeesByCountry);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+/* div.container>div.row>div.container*9>div.row>div.block*9>{&nbsp;} */
+.container{
+    display: grid;
+    border: solid;
+    border-width: 1.5px;
+    border-color: black;
+    width: fit-content;
+}
+
+body{
+    font-weight: 900;
+    font-size: larger;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: fit-content;
+}
+
+.block{
+    display: grid;
+    border: solid;
+    border-width: 0.1px;
+    border-color: black;
+    width: 40px;
+    height: 40px;
+    justify-items: center;
+    align-items: center;
+}
+
+

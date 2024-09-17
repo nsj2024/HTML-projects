@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding :0px;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 10px;
+}
+
+ol,ul{
+    display: table;
+    margin:0 auto;
+}
+
+
+.f1{
+  font-family: "Noto Sans Sinhala", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+  
+.f2 {
+  font-family: "Playwrite GB S", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.f3{
+    font-family: "Whisper", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+
+
+.f4 {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.f5 {
+  font-family: "Noto Sans Nag Mundari", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.f6{
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+  
+  
+  

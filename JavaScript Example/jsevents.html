@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript events</title>
+</head>
+<body>
+
+    <!-- <form actions ="">
+        <input type="button" value="greet" onclick="sayGreetings()" />
+        <input type="button" value="season" onclick="showSeason()" />
+        <input type="button" value ="green" onclick="green()" />
+        <input type="button" value ="blue" onclick="blue()" />
+
+        <div id = "greendiv">Hello green <br><br> <br></div>
+        <div id = "bluediv">Hello blue <br><br> <br></div>
+
+    </form> -->
+
+    <form name ="login" actions ="" method="post"  onsubmit="return validate()">
+
+        <fieldset>
+
+            <legend>Login form </legend><br/>   
+            <label for ="username">username</label>
+            <input type="text" name="username" id ="uid" ><br/><br/>
+            <label for ="password">password</label>
+            <input type="password" name ="password" id="pid"><br/><br/>
+            <input type="submit" value ="Submit"/>
+            <input type ="reset" value="clear">
+
+        </fieldset>
+
+    </form>
+        <script>
+            // function sayGreetings()
+            // {
+            //     alert("OLA Coma Sava");
+            // }
+
+
+            // function showSeason(){
+            //     var month = new Date().getMonth();
+            //     if(month >=6 && month <9)
+            //         alert ("Monsoon season")
+            // }
+
+
+            // function green()
+            // {
+            //     document.getElementById("greendiv").style.backgroundColor = "green";
+            //     document.getElementById("greendiv").style.color = "white";
+            //     document.getElementById("greendiv").style.fontWeight = "bold";
+            //     document.getElementById("greendiv").style.fontSize = "larger";
+            //     document.getElementById("greendiv").style.textAlign = "center"
+              
+            // }
+            
+            
+            // function blue()
+            // {
+            //     document.getElementById("bluediv").style.backgroundColor = "blue";
+            //     document.getElementById("bluediv").style.color = "white";
+            //     document.getElementById("bluediv").style.fontWeight = "bold";
+            //     document.getElementById("bluediv").style.fontSize = "larger";
+            //     document.getElementById("bluediv").style.textAlign = "center"
+            //     document.getElementById("bluediv").style.marginTop= "10px";
+            // }
+
+
+            function validate()
+            {
+                alert ("Validating......");
+                var u = document.login.username.value;
+                var p = document.login.password.value;
+                alert(u + p);
+                if(u.length >8 &&  p.length >8)
+                    return true
+                else
+                    return false;
+            }
+
+          
+            
+        </script>
+    </form>
+</body>
+</html>

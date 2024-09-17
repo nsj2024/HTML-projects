@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <script>
+        // var i = 1;
+        
+
+        // while(i<=10)
+        // {
+        //     var j =1;
+        //     while(j<=10)
+        //     {
+        //         res= i*j;
+        //         document.write(res + "\t");
+        //         j++;
+        //     }
+        //     document.write("<br>");
+
+        //     i++;
+        // }
+
+        let table = "";
+
+        for (let i = 1; i <= 20; i++) {
+        table += "<tr>";
+        for (let j = 1; j <= 20; j++) {
+            table += "<td>" + (i * j) + "</td>";
+        }
+        table += "</tr>";
+        }
+
+document.write( "<table border='1'>" + table + "</table>");
+    </script>
+</body>
+</html>

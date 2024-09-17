@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // alert("Hello UST Freshers 2024!");
+        // confirm("Please would u like to save the file");
+        // var loc = prompt("Enter your location" , loc);
+        // alert(loc);
+
+        // var data =10;
+        // alert(typeof(data));
+        // var data = "Welcome to JS";
+        // alert(typeof(data));
+
+        // var data = true;
+        // alert(typeof(data));
+
+
+        // var data;
+        // alert(typeof(data));
+        // var result =1/0;
+        // alert (result);
+
+        // var result = "10"/"10";
+        // alert(result);
+
+       // document.write("Welcome to Javascript");
+
+
+        function isEven(number) {
+            return number % 2 === 0;
+        }
+        console.log(isEven(4)); 
+        console.log(isEven(7)); 
+
+
+        let num = 12;
+        if (num > 10) {
+            console.log("Greater than 10");
+        } else {
+            console.log("10 or less");
+        }
+
+        let colors = ["red", "green", "blue"];
+        console.log(colors[0]); 
+
+        let fruits = ["apple", "banana", "cherry"];
+        console.log(fruits.length);
+
+        function factorial(n) {
+            if (n === 0 || n === 1) return 1;
+            return n * factorial(n - 1);
+        }
+
+        console.log(factorial(5)); 
+
+        function isPalindrome(str) {
+            const cleaned = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+            return cleaned === cleaned.split('').reverse().join('');
+        }
+
+        console.log(isPalindrome('A man a plan a canal Panama'));
+
+        function fibonacci(n) {
+            let a = 0, b = 1;
+            while (n > 0) {
+                [a, b] = [b, a + b];
+                n--;
+            }
+            return a;
+        }
+
+        console.log(fibonacci(6)); 
+
+        function getRandomNumber(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        console.log(getRandomNumber(1, 10)); 
+
+        function sumArray(arr) {
+            return arr.reduce((acc, num) => acc + num, 0);
+        }
+
+        console.log(sumArray([1, 2, 3, 4])); 
+
+        function countdown(seconds) {
+            const interval = setInterval(() => {
+                console.log(seconds);
+                if (seconds <= 0) {
+                    clearInterval(interval);
+                    console.log('Time\'s up!');
+                }
+                seconds--;
+            }, 1000);
+
+            function getRandomHexColor() {
+                return '#' + Math.floor(Math.random() * 16777215).toString(16);
+            }
+
+            console.log(getRandomHexColor());
+
+
+            function sortArray(arr) {
+                return arr.sort((a, b) => a - b);
+            }
+
+            console.log(sortArray([5, 3, 8, 1])); 
+
+
+        }
+
+        countdown(5);
+
+
+        var str = "hello";
+        let str1 = "let hello";
+        const str2 = "const hello";
+        //str2 = "something";
+ 
+         document.write("<h2>Welcome to Javascript " + str + " : " + str1 + " : " + str2 +" </h2>" );
+
+
+    </script>
+    <title>JSExample</title>
+</head>
+
+<body>
+    <script>
+        document.writeln("<center>")
+        for(i=1;i<7;i++){
+            document.writeln(`<h${i}>JavaScript</h${i}>`)
+        }
+        for(i=6;i>0;i--){
+            document.writeln(`<h${i}>JavaScript</h${i}>`)
+        }
+        document.writeln("</center>")
+    </script>
+</body>
+</html>

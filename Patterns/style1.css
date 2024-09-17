@@ -1,0 +1,36 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    font-size: 28px;
+}
+ 
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+}
+.r1{
+    background-color: yellow;
+   
+    display: grid;
+}
+ 
+.r2{
+    background-color: coral;
+ 
+}
+ 
+.r3{
+    background-color: blue;
+   
+}
+ 
+p {
+    background-color: black;
+    color: red;
+    margin: 10px;
+}
+a{
+    margin: 10px;
+}

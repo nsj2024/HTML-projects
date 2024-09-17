@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+
+.container{
+    display: flex ;
+    flex-wrap: wrap;
+    font-size: medium;
+    width:100vw;
+    height:50vw;
+    flex-direction: column;
+    align-content: center;
+    background-color: floralwhite;
+    justify-content: center;
+}
+
+
+.container1{
+    background-color: coral;
+    font-size: 50px;
+    margin: 5px;
+}
+
+.container2{
+    background-color: brown;
+    font-size: 50px;
+    margin:5px
+}
+
+.container3{
+    background-color: blue;
+    font-size: 50px;
+    margin:5px
+}
+
+.container4{
+    background-color: cornflowerblue;
+    font-size: 50px;
+    margin:5px;
+}
+
+.container5{
+    background-color: darkmagenta;
+    font-size: 50px;
+    margin:5px;
+}

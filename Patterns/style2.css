@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+ body{
+    width: 100vw;
+    height: 100vh;
+    font-size: 28px;
+    background-color: black;
+} 
+
+
+.container{
+    height: 70vh;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    margin: 50px;
+    padding: 50px;
+    background-color: white;
+    
+} 
+
+
+.f1{
+    height: 70vh;
+    display: grid;
+    grid-column: 1fr 1fr;
+} 
+
+.f2{
+    height: 70vh;
+    display: grid;
+    grid-column: 1fr 1fr;
+}  
+
+.b1{
+    background-color: brown;
+    align-content: end;
+    text-align: right;
+
+}
+
+.b2{
+    background-color: yellow;
+    text-align: right;
+}
+
+.b3{
+    background-color: green;
+    align-content: end;
+    
+}
+
+.b4{
+    background-color: coral;
+}
+
+
